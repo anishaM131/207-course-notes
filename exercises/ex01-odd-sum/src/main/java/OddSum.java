@@ -8,8 +8,8 @@
  *
  * Relevant readings: 1.6. Arrays and 1.8.2. for Loops.
  */
-public class OddSum {
 
+public class OddSum {
     public static void main(String[] args) {
         int[] numbers = {10, 20, 30, 40, 50};
         // Values at odd indices are 20 (index 1) and 40 (index 3), so this
@@ -31,10 +31,10 @@ public class OddSum {
         //       Recall arr.length gives the number of elements.
         //       You can index into arrays as we do in Python
         //       (e.g. arr[i] gives you the item at index i).
-        for (int i = 1; i > arr.length ; i+=2){
-            sum = sum + arr[i];
+        int sum = 0;
+        for (int i = 1; i < arr.length ; i+=2){
+            sum += arr[i];
         }
         return sum;
-
     }
 }
