@@ -23,9 +23,19 @@ public class FirstLetters {
      *
      * @param words a non-empty string of words separated by single spaces
      * @return the first character of each word, concatenated
+     * anisha note: I had trouble with this one!
      */
     public static String firstLetters(String words) {
         // TODO: complete
-        return "";
+        StringBuilder result = new StringBuilder();
+        result.append(words.charAt(0));
+
+        for (int i = 1; i < words.length(); i++) {
+            if (words.charAt(i) == ' ') {
+                result.append(words.charAt(i + 1));
+            }
+        }
+
+        return result.toString();
     }
 }
