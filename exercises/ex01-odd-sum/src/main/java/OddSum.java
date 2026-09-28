@@ -35,5 +35,6 @@ public class OddSum {
             sum = sum + arr[i];
         }
         return sum;
+
     }
 }
